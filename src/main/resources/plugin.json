@@ -1,0 +1,12 @@
+{
+  "id": "generator-fabric-26.3",
+  "weight": 0,
+  "supportedversions": [202600344621, 202600399999],
+  "info": {
+    "name": "Minecraft Fabric 26.3 Generator",
+    "version": "${pluginVersion}",
+    "description": "Fabric generator for Minecraft 26.3",
+    "author": "LitQA",
+    "credits": "Goldorion, NerdyPuzzle, Spectrall, Moegirl Deepseek; based on the official Fabric-Generator-MCreator"
+  }
+}

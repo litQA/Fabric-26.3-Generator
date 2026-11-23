@@ -1,0 +1,6 @@
+rootProject.name = 'Fabric-Generator-MCreator-26.3'
+
+if(mcreator_path != "unassigned") {
+    include ":MCreator"
+    project(":MCreator").projectDir = file(mcreator_path)
+}
