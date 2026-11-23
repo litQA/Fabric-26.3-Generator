@@ -5,7 +5,7 @@
 | Item | Value |
 | --- | --- |
 | Plugin ID | generator-fabric-26.3 |
-| Plugin version | 2026.3-2.10.2.6-beta |
+| Plugin version | 2026.3-2.10.3.7-beta |
 | MCreator | 2026.3.44621 |
 | Supported MCreator builds | 202600344621 through 202600399999 |
 | Minecraft | 26.3 |
@@ -57,7 +57,7 @@ The Fabric 26.3 base templates required these compatibility changes:
 - Block registration now uses the 26.3 `BlockBehaviour.Properties.setId(ResourceKey<Block>)` contract.
 - The generated mod initializer only calls item-extension or special-entity loaders when those types exist.
 - The generated client initializer only calls the model loader when models or special entity types exist.
-- `base.archivesName` is derived from the workspace mod id.
+- `base.archivesName` uses the stable `modid` archive name expected by the generator export path.
 - Fabric Loader, Fabric API, and the Gradle wrapper use the versions in the target table.
 - The stale upstream `actualmodid` property was removed.
 - The NBT data class is generated as part of the base template set.
@@ -66,7 +66,7 @@ The Fabric 26.3 base templates required these compatibility changes:
 
 The plugin was built successfully with Gradle 8.14.5. The current environment has a broken `File.canWrite()` result that prevents Gradle 9.x from configuring the root project, so Gradle 8.14.5 was used only as a local validation runner. The project wrapper remains on Gradle 9.9.1 as required by the target table.
 
-The built ZIP loaded in MCreator 2026.3.44621 through the real plugin loader and produced `LOADED fabric-26.3 mc=26.3`.
+The built ZIP loaded in MCreator 2026.3.44621 through the real plugin loader and produced `LOADED fabric-26.3 mc=26.3`. A regenerated workspace build file records `base.archivesName = "modid"`; this matches the generator `export_file` path `build/libs/modid-1.0.jar`.
 
 A headless workspace was created with:
 

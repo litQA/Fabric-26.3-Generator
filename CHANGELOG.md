@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026.3-2.10.3.7-beta
+
+Fabric 26.3 export fix:
+
+Generated workspace build files use the stable `modid` archive name that the generator export path resolves to `build/libs/modid-1.0.jar`.
+
+Validation:
+
+The plugin ZIP loaded in MCreator 2026.3.44621 and generated a workspace with 24 Java sources. The generated `build.gradle` records `base.archivesName = "modid"`, matching the generator export path.
+
 ## 2026.3-2.10.2.6-beta
 
 Fabric 26.3 procedure coverage:

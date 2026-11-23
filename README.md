@@ -8,7 +8,7 @@ The plugin is based on the official Fabric-Generator-MCreator project and adds p
 
 | Component | Version |
 | --- | --- |
-| Plugin | 2026.3-2.10.2.6-beta |
+| Plugin | 2026.3-2.10.3.7-beta |
 | MCreator | 2026.3.44621 |
 | Minecraft | 26.3 |
 | Fabric Loader | 0.20.1 |
