@@ -1,3 +1,6 @@
+<img width="1000" alt="fabric generator banner 26 3" src="https://github.com/user-attachments/assets/c905545f-79cd-43ba-a377-c1f6da9c583d" />
+
+
 # Minecraft Fabric 26.3 Generator
 
 This repository contains a resource generator plugin for MCreator that targets Fabric and Minecraft 26.3.
